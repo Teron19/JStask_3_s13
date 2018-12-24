@@ -1,6 +1,5 @@
-get
-
-
+'use strict'
+let elemResult = document.getElementById('result');
 
 
 
@@ -19,7 +18,7 @@ function isNumbersEqual() {
 }
 
 functoin isBigDifference() {
-
+fgfd
     result
 }
 
