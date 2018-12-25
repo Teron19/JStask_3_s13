@@ -19,18 +19,18 @@
 let elemResult = document.getElementById('result');
 
 
-function getRndNumber() {
+function getRndNumber() {  //получения случайных чисел
     var first = Math.floor((Math.random() * 6) + 1);
     var second = Math.floor((Math.random() * 6) + 1);
 }
 
-var result = function setResult() {
+var result = function setResult() { //склеивать все строки в одну
     writeResult += "Первая кость: " + first + "Вторая кость: " + second + '<br>' +
         "Выпал дубль. Число" + i + '<br>' + "Большой разброс между костями. Разница составляет" + difecence + '<br>';
 }
 result();
 
-function isNumbersEqual() { // проверка на совпадение
+function isNumbersEqual(first, second) { // проверка на совпадение
     if (first === second || second === first) {
         elemResult += "Выпал дубль. Число" + i + '<br>';
     }
@@ -45,7 +45,7 @@ function isBigDifference(first, second) { // определение разниц
     return isBigDifference;
 }
 
-function isTotal() {
+function isTotal() { 
     var total = 0;
     (total < 100) ?
     result("Победа, вы набрали: " + total +" очков"):
@@ -62,6 +62,8 @@ function run() {
         if (i === 8 || i === 13) {
             continue;
         }
+        var first = getRndNumber();
+        /*let ?*/ var second = getRndNumber();
         getRndNumber();
         result();
         isNumbersEqual();

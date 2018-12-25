@@ -10,14 +10,15 @@ function getPlayerResult() {
 function getNameById() {
 
     switch (getPlayerResult) {
+        let variant;
         case 1:
-            "камень";
-            break;
+        variant = "камень";
+            breack;
         case 2:
-            "ножницы";
-            break;
+        variant = "ножницы";
+            breack;
         case 3:
-            "бумага";
+        variant =  "бумага";
             breack;
     }
 }
@@ -35,7 +36,7 @@ function printResult(determineWinner) {
             result.innerHTML += 'выиграл первый игрок';
             break;
         case player2:
-            result.innerHTML = +"выиграл первый игрок";
+            result.innerHTML += "выиграл первый игрок";
     }
 }
 
