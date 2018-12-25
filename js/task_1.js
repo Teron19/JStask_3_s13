@@ -37,7 +37,7 @@ function isNumbersEqual() { // проверка на совпадение
     return isNumbersEqual() + result();
 }
 
-function isBigDifference() { // определение разницы
+function isBigDifference(first, second) { // определение разницы
     if (first < 3 & second > 4 || first > 4 & second < 3) {
         var difecence = Math.abs(second - first);
         result();
