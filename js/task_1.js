@@ -19,12 +19,6 @@
 let elemResult = document.getElementById('result');
 
 
-for (var i = 1; i <= 15; i++) {
-    if (i === 8 || i === 13) {
-        continue;
-    }
-}
-
 function getRndNumber() {
     var first = Math.floor((Math.random() * 6) + 1);
     var second = Math.floor((Math.random() * 6) + 1);
