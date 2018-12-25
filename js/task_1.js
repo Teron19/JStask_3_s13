@@ -18,7 +18,7 @@
 
 'use strict';
 
-let elemResult = document.getElementById('result');
+//let elemResult = document.getElementById('result');
 let writeResult = '';
 let total = 0,
     first = 0,
@@ -36,13 +36,13 @@ const result = function setResult(str) { //склеивать все строк�
 }
 
 function isNumbersEqual(firstPar, secondPar) { // проверка на совпадение
-    if (firstPar === secondPar || secondPar === firstPar) {
+    if ((firstPar === secondPar) || (secondPar === firstPar)) {
         writeResult += "Выпал дубль. Число" + first + '<br>';
     }
 }
 
 function isBigDifference(firstPar, secondPar) { // определение разницы
-    if (firstPar < 3 & secondPar > 4 || firstPar > 4 & secondPar < 3) {
+    if ((firstPar < 3 & secondPar > 4) || (firstPar > 4 & secondPar < 3)) {
         var difecence = Math.abs(secondPar - firstPar);
         result("Большой разброс между костями. Разница составляет" + difecence + '<br>');
     }
@@ -59,7 +59,7 @@ function setTotal(firstPar, secondPar) {
 }
 
 function printResult() {
-    elemResult += result;
+    document.getElementById('result').innerHTML += result;
 }
 
 (function run() {
