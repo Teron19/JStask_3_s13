@@ -24,8 +24,8 @@ let total = 0,
     first = 0,
     second = 0;
 
-    //получения случайных чисел
- let  getRndNumber = () =>  (Math.floor((Math.random() * 6) + 1));
+//получения случайных чисел
+let getRndNumber = () => (Math.floor((Math.random() * 6) + 1));
 
 
 
@@ -74,7 +74,8 @@ function printResult() {
         isBigDifference(first, second);
         setTotal();
     }
-    
+
     isTotal();
+    
     printResult();
 }());
