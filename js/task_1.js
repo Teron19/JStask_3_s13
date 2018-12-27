@@ -74,6 +74,7 @@ function printResult() {
         isBigDifference(first, second);
         setTotal();
     }
+    
     isTotal();
     printResult();
 }());
