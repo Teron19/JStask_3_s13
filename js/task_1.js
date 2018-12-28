@@ -59,7 +59,7 @@ function setTotal(firstPar, secondPar) {
 }
 
 function printResult() {
-    document.getElementById('result').innerHTML += result;
+    document.getElementById('result').innerHTML += writeResult;
 }
 
 (function run() {
@@ -72,7 +72,7 @@ function printResult() {
         result("Первая кость: " + first + "Вторая кость: " + second + '<br>');
         isNumbersEqual(first, second);
         isBigDifference(first, second);
-        setTotal();
+        setTotal(first, second);
     }
 
     isTotal();
