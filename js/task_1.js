@@ -54,7 +54,7 @@ function isTotal() {
     //розпечатьть с помощью result
 }
 
-function setTotal(firstPar, secondPar) {
+function setTotal(firstPar, secondPar) { // принимать можно любое слово не обязательно тоже самое сто передаем "first is second"
     total += firstPar + secondPar;
 }
 
@@ -72,7 +72,7 @@ function printResult() {
         result("Первая кость: " + first + "Вторая кость: " + second + '<br>');
         isNumbersEqual(first, second);
         isBigDifference(first, second);
-        setTotal(first, second);
+        setTotal(first, second); // тут передаем параметрыв функфию setTotal 
     }
 
     isTotal();
